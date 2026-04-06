@@ -26,9 +26,9 @@ namespace ContactSync.API.Data
 
             // Seed some initial data so the app isn't empty on first run
             modelBuilder.Entity<Contact>().HasData(
-                new Contact { Id = 1, FirstName = "Sarah", LastName = "Chen", Email = "sarah.chen@acmecorp.com", Phone = "780-555-0101", Company = "Acme Corp", SyncStatus = SyncStatus.Synced, CreatedAt = DateTime.UtcNow, UpdatedAt = DateTime.UtcNow },
-                new Contact { Id = 2, FirstName = "James", LastName = "Okafor", Email = "j.okafor@northbank.com", Phone = "780-555-0182", Company = "North Bank", SyncStatus = SyncStatus.Pending, CreatedAt = DateTime.UtcNow, UpdatedAt = DateTime.UtcNow },
-                new Contact { Id = 3, FirstName = "Maria", LastName = "Reyes", Email = "maria.r@fingroup.ca", Phone = "780-555-0143", Company = "Fin Group", SyncStatus = SyncStatus.Failed, CreatedAt = DateTime.UtcNow, UpdatedAt = DateTime.UtcNow }
+                new Contact { Id = 1, FirstName = "Sarah", LastName = "Chen", Email = "sarah.chen@acmecorp.com", Phone = "780-555-0101", Company = "Acme Corp", SyncStatus = SyncStatus.Synced, CreatedAt = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc), UpdatedAt = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc) },
+                new Contact { Id = 2, FirstName = "James", LastName = "Okafor", Email = "j.okafor@northbank.com", Phone = "780-555-0182", Company = "North Bank", SyncStatus = SyncStatus.Pending, CreatedAt = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc), UpdatedAt = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc) },
+                new Contact { Id = 3, FirstName = "Maria", LastName = "Reyes", Email = "maria.r@fingroup.ca", Phone = "780-555-0143", Company = "Fin Group", SyncStatus = SyncStatus.Failed, CreatedAt = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc), UpdatedAt = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc) }
             );
         }
     }
