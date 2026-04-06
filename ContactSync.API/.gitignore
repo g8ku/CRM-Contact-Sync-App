@@ -1,0 +1,18 @@
+# .NET
+**/bin/
+**/obj/
+*.user
+*.suo
+.vs/
+*.db
+*.db-shm
+*.db-wal
+
+# Node / React (for later)
+node_modules/
+dist/
+.env
+.env.local
+
+# VS Code
+.vscode/
